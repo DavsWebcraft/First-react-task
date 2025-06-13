@@ -8,10 +8,13 @@
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   background-color: white;
+  max-height: 400px;
 }
 
 .profile-left {
   background-color: gray;
+  min-width: 50%;
+  max-width: 50%;
   flex: 1;
   display: flex;
   align-items: center;
@@ -22,7 +25,7 @@
 .profile-image {
   width: 95%;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   max-height: 400px;
   border-radius: 8px;
   object-fit: cover;
