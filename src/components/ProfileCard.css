@@ -1,0 +1,101 @@
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.profile-left {
+  background-color: gray;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.profile-image {
+  width: 95%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.profile-right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.profile-right h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #0f0b0b;
+  text-align: start;
+}
+
+.profile-right p {
+  font-size: 16px;
+  color: #0f0303;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.portfolio-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #242528db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+  background-color: black;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    padding-right: 20px;
+  }
+
+  .profile-left,
+  .profile-right {
+    width: 100%;
+  }
+
+  .profile-right p {
+    padding-right: 20px;
+  }
+}
